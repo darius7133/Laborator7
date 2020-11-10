@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fisa personala</title>
+<style>
+body {
+  background-color: green;
+}
+
+h1 {
+  color: yellow;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+<script>
+function myFunction() {
+	document.getElementById("numeProfil").innerHTML="Onita Andrei - student";
+	document.getElementById("pozaProfil").src="eu2.jpg";
+	document.body.style.backgroundColor="Blue";
+	document.getElementById("hobby1").innerHTML="Drumetiile";
+	document.getElementById("hobby2").innerHTML="Gradinaritul";
+	document.getElementById("hobby3").innerHTML="Tatuajele";
+	}
+function arVarst()
+	{
+	var azi=new Date;
+	var varstaMea;
+	
+	var anNasc=document.getElementById("varsta").innerHTML;
+	
+	varstaMea=azi.getFullYear()-parseInt(anNasc);
+	
+	document.getElementById("varsta").innerHTML=varstaMea;
+	}
+</script>
+
+</head>
+
+<body>
+
+
+
+<h1 id="numeProfil">Onita Andrei</h1>
+<img id="pozaProfil" src="eu1.jpg">
+
+<br>
+
+<p onmouseover="arVarst()"id="varsta">2001</p>
+
+<br>
+
+<button type="button" onclick="myFunction()">Schimba design</button>
+
+<p>andreionit9@gmail.com</p>
+<p>“Educatia este imblanzirea unei flacari, nu umplerea unui vas.”</p>
+<h2>Discipline</h2>
+<p><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3104.pdf ">Programarea calculatoarelor</a></p>
+<p><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3105.pdf">Componente si circuite electronice pasive </a></p>
+<p><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/TstRo/EL3106.pdf ">Informatica aplicata</a></p>
+<br>
+<h3>Hobby-uri</h3>
+<p id="hobby1">1.Baschet</p>
+<p id="hobby2">2.Muzica</p>
+<p id="hobby3">3.Gatit</p>
+
+</body>
+</html>

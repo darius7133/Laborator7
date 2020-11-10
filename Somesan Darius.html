@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fisa personala</title>
+<style>
+		body {background-color: #008080;}
+		h1 {color: #808000;}
+		p {color: #FFFF00;}
+		table {background-color: #000000;}
+		h1 {font-family: "Comic Sans MS";
+				font-size: 40px;}
+				p {font-family: "Courier New";
+					font-size: 30px;}
+				img{border: 3px solid black;
+				border-radius: 50%;
+				width: 900px;
+				padding: 6px;
+				margin: right;
+				opacity: 75%;}
+</style>
+<script>
+function myFunction() {
+	document.getElementById("numeProfil").innerHTML="Somesan Darius - student";
+	document.getElementById("pozaProfil").src="darius.jpg";
+	document.body.style.backgroundColor="Blue";
+	document.getElementById("hobby1").innerHTML="Inotul";
+	document.getElementById("hobby2").innerHTML="Jocurile video";
+	document.getElementById("hobby3").innerHTML="Gatitul";
+	}
+function arVarst()
+	{
+	var azi=new Date;
+	var varstaMea;
+	
+	var anNasc=document.getElementById("varsta").innerHTML;
+	
+	varstaMea=azi.getFullYear()-parseInt(anNasc);
+	
+	document.getElementById("varsta").innerHTML=varstaMea;
+	}
+</script>
+</head>
+<body>
+
+<h1 id="numeProfil">Somesan Darius Ioan</h1>
+<img id="pozaProfil" src=darius.jpg>
+<br>
+
+<p onmouseover="arVarst()"id=varsta">2001</p>
+<br>
+<button type="button" onclick="myFunction()">Schimba design</button>
+
+<p>darius.somesan1@gmail.com</p>
+<p>“Daca faci ceea ce ai facut mereu, ai sa primesti ceea ce ai primit mereu.” Tony Robbins</p>
+<h2>Discipline:</h2>
+<p><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/06.pdf">Informatica aplicata (I)</a></p>
+<p><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf">Programarea calculatoarelor (I)</a></p>
+<p><p><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/35.pdf">Teoria informatiei si codarii (III)</a></p>
+<br>
+<h3>Hobby-uri</h3>
+<p>1.Fotbal</p>
+<p>2.Volei</p>
+<p>3.Muzica</p>
+
+</body>
+</html>
